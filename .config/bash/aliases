@@ -1,0 +1,24 @@
+
+alias cdg='cd $(ghq root)/$(ghq list | sed -E "s#([^/]+)/([^/]+)#$(tput setaf 1)\1/$(tput setaf 6)\2$(tput sgr0)#" | fzf --ansi)'
+alias cdo='open $(ghq list | sed -nE "s#([a-z0-9\-\.]+\.[a-z0-9\-]+)/([^/]+)#https://$(tput setaf 1)\1/$(tput setaf 6)\2$(tput sgr0)#p" | fzf --ansi) 2>/dev/null'
+alias cdv='code $(ghq root)/$(ghq list | sed -E "s#([^/]+)/([^/]+)#$(tput setaf 1)\1/$(tput setaf 6)\2$(tput sgr0)#" | fzf --ansi)'
+
+alias collab="ssh draft -t tmux -S /home/amfl/shared.sock a"
+
+# k9s prompt for context
+alias k9s="k9s --context=\$(cat ~/.kube/config | yq -r '.contexts[] | .name' | fzf)"
+
+# kubectl helpers
+alias yq-k8s-labels="yq -y '[.items[] | {\"name\": .metadata.name, \"labels\": .metadata.labels}]'"
+alias yq-k8s-annotations="yq -y '[.items[] | {\"name\": .metadata.name, \"labels\": .metadata.annotations}]'"
+
+# music production helpers
+alias yt="$(echo 3pm tamrof-oidua-- oidua-tcartxe-- ld-ebutuoy | rev)"
+
+# Antlr
+export CLASSPATH=".:/usr/local/lib/antlr-4.9.3-complete.jar:$CLASSPATH"
+alias antlr4='java -jar /usr/local/lib/antlr-4.9.3-complete.jar'
+alias grun='java org.antlr.v4.gui.TestRig'
+
+# Generate passwords (add additional chars for more security)
+alias genpass='< /dev/urandom gtr -dc "\11\12\15\40-\176" | head -c${1:-32};echo;'
