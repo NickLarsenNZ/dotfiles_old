@@ -1,0 +1,152 @@
+{
+  "better-comments.tags": [
+      {
+          "backgroundColor": "transparent",
+          "bold": false,
+          "color": "#3498DB",
+          "italic": false,
+          "strikethrough": false,
+          "tag": "?",
+          "underline": false
+      },
+      {
+          "backgroundColor": "transparent",
+          "bold": false,
+          "color": "#474747",
+          "italic": false,
+          "strikethrough": true,
+          "tag": "//",
+          "underline": false
+      },
+      {
+          "backgroundColor": "transparent",
+          "bold": false,
+          "color": "#98C379",
+          "italic": false,
+          "strikethrough": false,
+          "tag": "*",
+          "underline": false
+      },
+      {
+          "backgroundColor": "transparent",
+          "bold": false,
+          "color": "#FF2D00",
+          "italic": false,
+          "strikethrough": false,
+          "tag": "!",
+          "underline": false
+      },
+      {
+          "backgroundColor": "transparent",
+          "bold": false,
+          "color": "#FF8C00",
+          "italic": false,
+          "strikethrough": false,
+          "tag": "todo",
+          "underline": false
+      },
+      {
+          "backgroundColor": "transparent",
+          "bold": false,
+          "color": "#aaaaaa",
+          "italic": false,
+          "strikethrough": false,
+          "tag": ">",
+          "underline": false
+      }
+  ],
+  "breadcrumbs.enabled": true,
+  "cSpell.userWords": [],
+  "debug.console.fontSize": 12,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.wordWrap": "off",
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  },
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.defaultFormatter": "EditorConfig.EditorConfig",
+  "editor.fontFamily": "'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.hover.above": false,
+  "editor.largeFileOptimizations": false,
+  "editor.minimap.enabled": true,
+  "editor.minimap.maxColumn": 50,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 2,
+  "editor.minimap.showSlider": "always",
+  "editor.renderWhitespace": "boundary",
+  "editor.smoothScrolling": true,
+  "editor.suggest.showWords": false,
+  "editor.suggestSelection": "first",
+  "editor.wordWrap": "off",
+  "eslint.format.enable": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "github-actions.org-features": true,
+  "go.formatTool": "gofmt",
+  "go.languageServerExperimentalFeatures": {
+      "autoComplete": true,
+      "diagnostics": true,
+      "documentLink": true,
+      "documentSymbols": true,
+      "findReferences": true,
+      "format": true,
+      "goToDefinition": true,
+      "goToImplementation": true,
+      "goToTypeDefinition": true,
+      "hover": true,
+      "rename": true,
+      "signatureHelp": true,
+      "workspaceSymbols": true
+  },
+  "go.useLanguageServer": true,
+  "hediet.vscode-drawio.theme": "Kennedy",
+  "html.format.enable": false,
+  "html.format.wrapAttributes": "preserve",
+  "markdown.extension.toc.levels": "2..6",
+  "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+  },
+  "python.formatting.provider": "none",
+  "redhat.telemetry.enabled": false,
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.scrollback": 10000,
+  "terraform.format": {},
+  "terraform.indexing": {
+      "enabled": false,
+      "liveIndexing": false
+  },
+  "terraform.languageServer": {
+      "args": [
+          "serve"
+      ],
+      "editor.renderWhitespace": "all",
+      "extensions.ignoreRecommendations": true,
+      "external": true
+  },
+  "terraform.path": "terraform",
+  "terraform.telemetry.enabled": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": -1,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "yaml.customTags": [],
+  "yaml.format.enable": false,
+  "yaml.validate": false
+}

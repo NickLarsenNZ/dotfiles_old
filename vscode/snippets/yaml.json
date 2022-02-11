@@ -1,0 +1,37 @@
+{
+	"Pull Request Pipeline": {
+		"prefix": "pr",
+		"description": "Pull Request Pipeline",
+		"body": [
+			"name: Pull Request",
+			"",
+			"on:",
+			"  workflow_dispatch:",
+			"  pull_request:",
+			"    branches: [main]",
+			"",
+			"jobs:",
+			"  ${1:default}:",
+			"    runs-on: ubuntu-latest",
+			"    steps:",
+			"    - run: ${0:echo hello world}"
+		]
+	},
+	"Merge Main Pipeline": {
+		"prefix": "main",
+		"description": "Merge Main Pipeline",
+		"body": [
+			"name: Merge Main",
+			"",
+			"on:",
+			"  push:",
+			"    branches: [main]",
+			"",
+			"jobs:",
+			"  ${1:default}:",
+			"    runs-on: ubuntu-latest",
+			"    steps:",
+			"    - run: ${0:echo hello world}"
+		]
+	}
+}

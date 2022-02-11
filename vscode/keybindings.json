@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    // My rendition of vim-slime
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.terminal.runSelectedText",
+        "when": "editorTextFocus"
+    },
+    // Can't recall if/why I did these, but they look like useful tempalates
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenView"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+        "when": "inQuickOpen && inViewsPicker"
+    }
+]
